@@ -22,8 +22,8 @@ def main():
 
     dataset = get_data(args)
     
-    pred_dir = args.pred_dir
-    feat_dir = osp.join(args.feat_dir, args.dataset+'_patch')
+    pred_dir = args.save_dir
+    feat_dir = osp.join(args.load_dir, args.dataset+'_patch')
 
     print('====> loading predictions')
     filename = '{}_pred_regional.tar'.format(args.dataset)
@@ -86,6 +86,6 @@ if __name__ == '__main__':
     # path
     # path
     parser.add_argument('--data-dir', type=str, metavar='PATH', default='datasets')
-    parser.add_argument('--feat-dir', type=str, metavar='PATH', default='features')
-    parser.add_argument('--pred-dir', type=str, metavar='PATH', default='predictions')
+    parser.add_argument('--load-dir', type=str, metavar='PATH', default='features')
+    parser.add_argument('--save-dir', type=str, metavar='PATH', default='predictions')
     main()

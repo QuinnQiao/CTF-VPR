@@ -37,6 +37,7 @@ python pred_patch.py --data-dir <your_data_dir> --dataset <pitts_or_tokyo> --loa
 ```
 
 The results will be the same as those claimed in the paper:
+
 |   Dataset   |  Recalls (Base) |   Recalls (RR)  |   Recalls (SV)  |
 |  :--------: | :-------------: | :-------------: |   Recalls (SV)  |
 |   Pitts250k   | 90.7 / 96.4 / 97.6 | 91.1 / 96.5 / 97.7 | 92.6 / 97.2 / 97.7 |
@@ -45,7 +46,7 @@ The results will be the same as those claimed in the paper:
 \*: This performance drop (85.4 / 91.1 / 93.3 in SFRS) is caused by smaller query size. Please refer to datasets/\_\_init\_\_.py.
 
 Note that this repo is a simple version neglecting the time cost.
-For example, we use argsort func for global retrieval which is highly time-consuming.
+For example, we use the argsort function for global retrieval which is highly time-consuming.
 Using [faiss](https://github.com/facebookresearch/faiss) can reduce the retrieval time.
 
 
