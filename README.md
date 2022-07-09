@@ -39,7 +39,7 @@ python pred_patch.py --data-dir <your_data_dir> --dataset <pitts_or_tokyo> --loa
 The results will be the same as those claimed in the paper:
 
 |   Dataset   |  Recalls (Base) |   Recalls (RR)  |   Recalls (SV)  |
-|  :--------: | :-------------: | :-------------: |   Recalls (SV)  |
+|  :--------: | :-------------: | :-------------: | :-------------: |
 |   Pitts250k   | 90.7 / 96.4 / 97.6 | 91.1 / 96.5 / 97.7 | 92.6 / 97.2 / 97.7 |
 |   Tokyo24/7   | 84.1 / 89.2 / 91.3\* | 87.0 / 92.4 / 93.7 | 91.1 / 93.7 / 93.7 |
 
